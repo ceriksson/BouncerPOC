@@ -1,0 +1,6 @@
+framework module BouncerPOC {
+  umbrella header "BouncerPOC-umbrella.h"
+
+  export *
+  module * { export * }
+}
