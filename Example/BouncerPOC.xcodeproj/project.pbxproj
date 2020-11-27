@@ -39,13 +39,13 @@
 		607FACE51AFB9204008FA782 /* BouncerPOC_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BouncerPOC_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		69510A387CE0F433DC0F0E6E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		69510A387CE0F433DC0F0E6E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6FCE5FD838D544905FFA154D /* Pods-BouncerPOC_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BouncerPOC_Example.release.xcconfig"; path = "Target Support Files/Pods-BouncerPOC_Example/Pods-BouncerPOC_Example.release.xcconfig"; sourceTree = "<group>"; };
 		7099B85BB4A4F32CE11704BB /* Pods_BouncerPOC_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BouncerPOC_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73846A4013F5531609C02C70 /* Pods-BouncerPOC_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BouncerPOC_Tests.release.xcconfig"; path = "Target Support Files/Pods-BouncerPOC_Tests/Pods-BouncerPOC_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9682BFAF372A7FB40AE6088C /* Pods_BouncerPOC_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BouncerPOC_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C324AF5ABD1AD1F7540EEB7F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		FD41DA0CDF33BCF48FF3BAA2 /* BouncerPOC.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = BouncerPOC.podspec; path = ../BouncerPOC.podspec; sourceTree = "<group>"; };
+		C324AF5ABD1AD1F7540EEB7F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		FD41DA0CDF33BCF48FF3BAA2 /* BouncerPOC.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = BouncerPOC.podspec; path = ../BouncerPOC.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FEA402757428B3FC857DD84E /* Pods-BouncerPOC_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BouncerPOC_Tests.debug.xcconfig"; path = "Target Support Files/Pods-BouncerPOC_Tests/Pods-BouncerPOC_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -156,7 +156,6 @@
 				FEA402757428B3FC857DD84E /* Pods-BouncerPOC_Tests.debug.xcconfig */,
 				73846A4013F5531609C02C70 /* Pods-BouncerPOC_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -214,6 +213,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = A69WANMS4C;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
@@ -228,6 +228,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -444,7 +445,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -490,7 +491,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -503,10 +504,11 @@
 			baseConfigurationReference = 2CE997B7C0E359780651FC2E /* Pods-BouncerPOC_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A69WANMS4C;
 				INFOPLIST_FILE = BouncerPOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carleriksson.BouncerPOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
@@ -518,10 +520,11 @@
 			baseConfigurationReference = 6FCE5FD838D544905FFA154D /* Pods-BouncerPOC_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A69WANMS4C;
 				INFOPLIST_FILE = BouncerPOC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.carleriksson.BouncerPOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
